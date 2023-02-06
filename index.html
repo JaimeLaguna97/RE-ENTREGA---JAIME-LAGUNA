@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.jpg">
+  <link rel="stylesheet" href="./main.css">
+  <title>PCmaster | E-commerce product page</title>
+
+</head>
+<body>
+  <main class="main-container">
+    <header class="header">
+    <div class="header__navigation">
+      <img class="header__menu" src="./images/icon-menu.svg" alt="menu-icon">
+      <img class="header_logo" src="./images/logo.svg" alt="logo">
+
+      <nav class="navbar">
+        <ul class="navbar__items">
+          <li><a class="navbar__link" href="#">Gabinetes</a></li>
+          <li><a class="navbar__link" href="#">Procesadores</a></li>
+          <li><a class="navbar__link" href="#">Hardware</a></li>
+          <li><a class="navbar__link" href="#">About</a></li>
+          <li><a class="navbar__link" href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+      <!--inicio modal navbar-->
+      <div class="modal-navbar__background">
+        <nav class="modal-navbar">
+          <img class="modal-navbar__close-icon" src="./images/icon-close.svg" alt="">
+          <ul class="modal-navbar__items">
+            <li><a class="modal-navbar__link" href="#">Gabinetes</a></li>
+            <li><a class="modal-navbar__link" href="#">Procesadores</a></li>
+            <li><a class="modal-navbar__link" href="#">Hardware</a></li>
+            <li><a class="modal-navbar__link" href="#">About</a></li>
+            <li><a class="modal-navbar__link" href="#">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--final modal navbar-->
+      <div class="header__cart-avatar">
+        <div class="header__cart">
+          <div class="header__cart--notification">0</div>
+          <img src="./images/icon-cart.svg" alt="">
+        </div>
+        <img class="header__avatar" src="./images/image-avatar.png" alt="">
+      </div>
+    </header>
+    <section class="content">
+      <article class="gallery">
+        <div class="gallery__image-container">
+          <img class="gallery__previous" src="./images/icon-previous.svg" alt="previous">
+          <img class="gallery__next" src="./images/icon-next.svg" alt="next">
+        </div>
+        <div class="gallery__thumbnails">
+          <img id="1" class="gallery__thumbnail" src="./images/image-product-1-thumbnail.png" alt="thumbnail">
+          <img id="2" class="gallery__thumbnail" src="./images/image-product-2-thumbnail.png" alt="thumbnail">
+          <img id="3" class="gallery__thumbnail" src="./images/image-product-3-thumbnail.png" alt="thumbnail">
+          <img id="4" class="gallery__thumbnail" src="./images/image-product-4-thumbnail.png" alt="thumbnail">
+        </div>
+      </article>
+        
+      <article class="details">
+        <h2 class="details__company">PC builders Company</h2>
+        <h2 class="details__title">Limited Edition Computers</h2>
+        <p  class="details__description">Estas son las mejores computadores del mercado Uruguayo. Nos dedicamos pura y exclusivamente
+          a crear computadoras que soporten mucho tiempo y tengan alto rendimiento. Ademas de contar con diseños
+          unicos en el mercado.</p>
+        <div class="details__prices">
+          <p class="details__now">$125.00 <span class="details__discount">50%</span></p>
+          <p class="details__before">250.00</p>
+        </div>
+        <div class="details__product-quantity">
+          <div class="input">
+            <img class="input__minus" src="./images/icon-minus.svg" alt="minus">
+            <input class="input__number" type="text" value="0">
+            <img class="input__plus" src="./images/icon-plus.svg" alt="plus">
+          </div>
+          <button class="details__button"><img src="./images/icon-cart-white.svg" alt="cart"> Add to cart</button>
+        </div>
+      </article>
+    </section>
+
+    <!--inicio cart modal-->
+    <div class="cart-modal">
+      <p class="cart-modal__title">Cart</p>
+      <div class="cart-modal__checkout-container">
+        <div class="cart-modal__details-container">
+          <img class="cart-modal__image" src="./images/image-product-1-thumbnail.png" alt="">
+          <div>
+            <p class="cart-modal__details__product">RockStar 2 Mid-Tower PC gaming case</p>
+            <p class="cart-modal__details__price">$125 x3 <span>$375.00</span></p>
+          </div>
+          <img class="cart-modal__delete"  src="./images/icon-delete.svg" alt="delete">
+        </div>
+        <button class="cart-modal__checkout">Checkout</button>
+      </div>
+    </div>
+    <!--fin cart modal-->
+  </main>
+
+  <!-- inicio gallery modal -->
+  <div class="modal-gallery__background">
+    <article class="modal-gallery">
+      <div class="modal-gallery__close-container">
+        <img class="modal-gallery__close" src="./images/icon-close.svg" alt="icon close">
+      </div>
+      <div class="modal-gallery__image-container">
+        <img class="modal-gallery__previous" src="./images/icon-previous.svg" alt="previous">
+        <img class="modal-gallery__next" src="./images/icon-next.svg" alt="next">
+      </div>
+      <div class="modal-gallery__thumbnails">
+          <img id="m1" class="modal-gallery__thumbnail" src="./images/image-product-1-thumbnail.png" alt="thumbnail">
+          <img id="m2" class="modal-gallery__thumbnail" src="./images/image-product-2-thumbnail.png" alt="thumbnail">
+          <img id="m3" class="modal-gallery__thumbnail" src="./images/image-product-3-thumbnail.png" alt="thumbnail">
+          <img id="m4" class="modal-gallery__thumbnail" src="./images/image-product-4-thumbnail.png" alt="thumbnail">
+      </div>
+    </article>
+  </div>
+    <!-- fin gallery modal -->
+  <script src="/main.js"></script>
+</body>
+</html>
