@@ -138,6 +138,7 @@ function drawProductInModal(){
         priceModal.innerHTML = `$125 x${lastValue} <span>$${lastValue*125}.00</span>`;
 }
 
+
 // SHOW IMG MODAL
 const imagesModal = document.querySelector('.modal-gallery__background');
 const closeModalBtn = document.querySelector('.modal-gallery__close');
@@ -167,4 +168,15 @@ function changePreviousImage(imgContainer){
 closeModalBtn.addEventListener('click', ()=>{
     imagesModal.style.display = 'none';
 });
+
+
+// FETCH
+function consultarProductosServer(){
+    fetch("./content.json")
+    .then((response) => response.json())
+    .then((data)=> console.log(data))
+    .catch((error)=> console.log(error)); 
+}
+
+consultarProductosServer();
 
